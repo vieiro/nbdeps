@@ -3,7 +3,7 @@ Maven BOM projects for some third-party dependencies of incubator-netbeans
 # Use
 
     cd netbeans-equinox-bom; mvn install
-    cd nbdeps; mvn dependency:tree
+    cd NBDEPS; mvn dependency:tree
 
 Sample result:
 
