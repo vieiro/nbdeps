@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-DEPENDENCY_TREE</actionName>
+            <displayName>DEPENDENCY_TREE</displayName>
+            <goals>
+                <goal>dependency:tree</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-DEP_BUILD_CLASSPATH</actionName>
+            <displayName>DEP_BUILD_CLASSPATH</displayName>
+            <goals>
+                <goal>dependency:build-classpath</goal>
+            </goals>
+        </action>
+    </actions>
