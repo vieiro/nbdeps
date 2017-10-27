@@ -24,6 +24,8 @@ Sample result:
           \- org.eclipse.osgi:org.eclipse.osgi:jar:3.6.0.v20100517:provided
 
 
+Note that two different versions of org.eclipse.equinox.common are required, one is the latest as specified in the equinox-bom (3.9.0) and another one is required for making runtime.compatibility.auth work (3.6.0).
+
 # Todo
 
 Create more BOMs for other third party software (mylyn? Apache commons?)
