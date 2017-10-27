@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-CLASSPATH</actionName>
+            <displayName>CLASSPATH</displayName>
+            <goals>
+                <goal>dependency:build-classpath</goal>
+                <goal>-Dmdep.pathSeparator=":"</goal>
+                <goal>-Dmdep.prefix=''</goal>
+            </goals>
+            <properties>
+                <mdep.fileSeparator>":"</mdep.fileSeparator>
+                <mdep.outputFile>classpath</mdep.outputFile>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-DEPTREE</actionName>
+            <displayName>DEPTREE</displayName>
+            <goals>
+                <goal>dependency:tree</goal>
+            </goals>
+        </action>
+    </actions>

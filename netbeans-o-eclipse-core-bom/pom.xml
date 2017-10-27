@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.apache.netbeans</groupId>
+	<artifactId>netbeans-o-eclipse-core-bom</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.netbeans</groupId>
+				<artifactId>netbeans-equinox-bom</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.core.contenttype</artifactId>
+				<version>3.6.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.core.jobs</artifactId>
+				<version>3.9.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.core.net</artifactId>
+				<version>1.3.100</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.platform</groupId>
+				<artifactId>org.eclipse.core.runtime</artifactId>
+				<version>3.13.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.core</groupId>
+				<artifactId>org.eclipse.core.runtime.compatibility.auth</artifactId>
+				<version>3.2.200.v20100517</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

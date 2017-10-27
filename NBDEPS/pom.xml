@@ -10,11 +10,21 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
 	<dependencyManagement>
 		<dependencies>
+			<!-- Import netbeans-equinox-bom -->
 			<dependency>
 				<groupId>org.apache.netbeans</groupId>
 				<artifactId>netbeans-equinox-bom</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- Import netbeans-o-eclipse-core-bom -->
+			<dependency>
+				<groupId>org.apache.netbeans</groupId>
+				<artifactId>netbeans-o-eclipse-core-bom</artifactId>
 				<version>1.0-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
@@ -36,6 +46,31 @@
 		<dependency>
 			<groupId>org.eclipse.platform</groupId>
 			<artifactId>org.eclipse.equinox.app</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>org.eclipse.core.contenttype</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>org.eclipse.core.jobs</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>org.eclipse.core.net</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.platform</groupId>
+			<artifactId>org.eclipse.core.runtime</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.core</groupId>
+			<artifactId>org.eclipse.core.runtime.compatibility.auth</artifactId>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
